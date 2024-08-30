@@ -56,7 +56,7 @@ class FileStorage:
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
         except FileNotFoundError:
-            ## If the file does not exist, simply pass
+            # If the file does not exist, simply pass
             pass
 
     def delete(self, obj=None):
