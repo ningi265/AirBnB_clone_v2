@@ -105,7 +105,7 @@ class HBNBCommand(cmd.Cmd):
         if len(args) == 0:
             print([str(obj) for obj in objects.values()])
         elif args[0] in self.classes:
-            print([str(obj) for key, 
+            print([str(obj) for key,
                    obj in objects.items() if key.startswith(args[0])])
         else:
             print("** class doesn't exist **")
